@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: lightgray;
+  padding: 18px;
+  color: red;
+}
+
+header .logo {
+  display: inline;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+  display: inline;
+  margin-left: 70%;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+header nav a {
+  padding: 0 8px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  color: yellow;
+}
+
+img {
+  width: 40%;
+}
+
+.text-block {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 10px 0;
+}
+p {
+  margin: 8px 0;
+}
+span {
+  font-size: 14px;
+}
+.outer-list > li {
+  background-color: blue;
+  font-size: 22px;
+  margin-left: 26px;
+  list-style: square;
+}
+/* h1 {
+  color: yellow!important;
+}
+[data-heading] {
+  color: brown;
+}
+.h1 {
+  color: yellow;
+}
+.heading-1 {
+  color: darkorange;
+}
+
+#h1 {
+  color: grey;
+} */
+
+.text > p {
+  color: green;
+}

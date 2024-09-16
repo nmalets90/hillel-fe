@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    li {
+      color: green;
+    }
+    a {
+      background-color: lightblue;
+    }
+    a[target="_blank"] {
+      background-color: #fff;
+    }
+    a[target="_self"] {
+      background-color: green;
+    }
+    .container {
+      width: 80%;
+      background-color: rgb(157, 205, 205);
+      padding: 20px;
+      margin: auto;
+    }
+    #list-item-1 {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LOGO</div>
+    <nav>
+      <a href="#">Main</a>
+      <a href="#">About us</a>
+      <a href="#">Contacts</a>
+    </nav>
+  </header>
+  <div style="background-color: yellow; padding: 10px;">
+    <h1 style="font-size: 20px; color: blue;">This is our first lesson about CSS</h1>
+    <h2 style="font-size: 20px; color: blue;">H2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deserunt!</p>
+    <ul>
+      <li id="list-item-1">item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+    </ul>
+    <ul>
+      <li><a href="#">link-1</a></li>
+      <li><a href="#" target="_blank">link-1</a></li>
+      <li><a href="#" target="_self">link-1</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <ul>
+      <li>* - селектор, який вибирає всі елементи</li>
+      <li>tag - селектор, який вибирає всі елементи з назвою тегу</li>
+      <li>[attr="value"] - селектор, який вибирає всі елементи з назвою атрибута</li>
+      <li>.class - селектор, який вибирає всі елементи з назвою класу</li>
+      <li>#id - селектор, який вибирає всі елементи з назвою id</li>
+    </ul>
+
+    <p>DRY - don't repeat yourself!!!!!</p>
+  </div>
+</body>
+</html>
