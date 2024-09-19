@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Cera-pro-reg";
+  src: url("../fonts/CeraPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Cera-pro-bold";
+  src: url("../fonts/CeraPro-Bold.ttf");
+}
+@font-face {
+  font-family: "Cera-pro-med";
+  src: url("../fonts/CeraPro-Medium.ttf");
+}
+
+html {
+  font-family: "Cera-pro-reg";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 332px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+h1 {
+  font-family: "Cera-pro-med";
+  font-size: 20px;
+  text-align: center;
+  margin: 52px 0 40px;
+}
+.reg-text {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.text-divider {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #3D3D3D;
+  vertical-align: middle;
+}
+.colored-text {
+  color: #46A358;
+}
+input[type="text"], 
+input[type="password"], 
+input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+
+}
+input[type="submit"], button  {
+  font-family: "Cera-pro-bold";
+  color: #fff;
+  width: 100%;
+  padding: 16px 0 14px;
+  background-color: #46A358;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 36px;
+} 
+.soc-reg button {
+  background-color: #fff;
+  color: #727272;
+  border: 1px solid #EAEAEA;
+}
+.soc-reg button img {
+  vertical-align: bottom;
+  margin-right: 9px;
+}
+
+.line-label {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.line-label span {
+  display: inline-block;
+  background-color: #EAEAEA;
+  width: 82px;
+  height: 1px;
+  vertical-align: middle;
+}
+.colored-line {
+  height: 10px;
+  background-color: #46A358;
+}
