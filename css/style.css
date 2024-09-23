@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 20px;
+}
+/* p::first-letter {
+  font-size: 42px;
+  color:red;
+}
+p::first-line {
+  background-color: yellow;
+}
+
+p::before {
+  content: "I'm before";
+  color: blue;
+  font-size: 32px;
+}
+p::after {
+  content: "I'm After";
+  color: green;
+  font-size: 32px;
+}
+p::selection {
+  background-color: lightblue;
+  cursor: pointer;
+} */
+
+button {
+  padding: 12px 20px;
+  background-color: darkblue;
+  color: aliceblue;
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+
+}
+button:hover {
+  padding: 18px 28px;
+
+  background-color: yellow;
+  color: black;
+
+}
+
+a:active {
+  color: yellow;
+}
+a:link {
+  color: red;
+}
+
+input {
+  transition: 1s ease-in-out;
+}
+input:focus {
+  padding: 20px;
+  outline: none;
+  border-color: red;
+}
+
+.container p span:first-child {
+  color: blue;
+}
+.container p span:last-child {
+  color: green;
+}
+.container p span:nth-child(3) {
+  color: yellow;
+}
+
+:lang(en) > q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+ 
+td {
+  border: 1px solid darkcyan;
+  padding: 3px;
+}
