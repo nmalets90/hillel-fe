@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.card {
+  display: inline-block;
+  width: 250px;
+}
+.card-img {
+  height: 250px;
+}
+.card-img img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.card-desc {
+  /*  !!! з кнопками так робити не треба !!!  width: 120px; */
+  /*  !!! з кнопками так робити не треба !!!  height: 30px; */
+  padding: 10px 26px;
+  background-color: green;
+}
+
+.container {
+  width: 1200px;
+  height: 450px;
+}
