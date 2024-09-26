@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
   font-family: "Cera-pro-reg";
-  src: url("../fonts/CeraPro-Regular.ttf");
+  src: url("../fonts/CeraPro-Regular.ttf"),
+  url("../fonts/CeraPro-Regular.woff"),
+  url("../fonts/CeraPro-Regular.woff2");
 }
 @font-face {
   font-family: "Cera-pro-bold";
@@ -14,23 +17,25 @@
 html {
   font-family: "Cera-pro-reg";
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 .form-container {
   width: 332px;
   margin: 30px auto;
   padding: 0 16px;
 }
 h1 {
-  font-family: "Cera-pro-med";
+  /* font-family: "Cera-pro-med";
   font-size: 20px;
   text-align: center;
-  margin: 52px 0 40px;
+  margin: 52px 0 40px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1rem;
 }
 .reg-text {
   font-size: 13px;
@@ -79,6 +84,10 @@ input[type="submit"], button  {
 .line-label {
   text-align: center;
   margin-bottom: 28px;
+  font-size: 2rem;
+}
+.line-label  b {
+  font-size: 0.5em;
 }
 .line-label span {
   display: inline-block;
