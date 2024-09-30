@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 87%;
+  margin: 0 auto;
+}
+aside {
+  max-width: 26%;
+  min-width: 310px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+aside .content {
+  background-color: #FBFBFB;
+  padding: 14px 18px;
+  padding-bottom: 370px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  padding: 8px 0 8px 12px;
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(70, 163, 88, 0.1), rgba(70, 163, 88, 0.03));
+  position: relative;
+}
+.banner h2 {
+  padding-bottom: 18px;
+}
+.bg-item {
+  position: absolute;
+}
+.bg-item-1 {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, rgba(70, 163, 88, 0.5), rgba(70, 163, 88, 0));
+  border-radius: 50%;
+  top: 105px;
+  left: 67px;
+}
+.bg-item-2 {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, rgba(70, 163, 88, 0.5), rgba(70, 163, 88, 0));
+  border-radius: 50%;
+  bottom: 82px;
+  right: 17px;
+}
+.bg-item-3 {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(90deg, rgba(70, 163, 88, 0.5), rgba(70, 163, 88, 0));
+  border-radius: 7px;
+  bottom: 147px;
+  left: 16px;
+}
+.products {
+  display: flex;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.card {
+  width: calc(33.333% - 20px);
+  min-height: 300px;
+}
+.card img {
+  max-height: 100%;
+}
