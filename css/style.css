@@ -3,33 +3,109 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 90%;
+
+
+.flex-container { 
+  margin: 10px;
+  border: 1px solid green;
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+
+
+.item {
+  width: 150px;
+  /* height: 150px; */
+  background-color: #ccc;
+  border: 1px solid blue;
+  padding: 10px;
+  order: 0;
+}
+
+.item-5 {
+  order: 1;
+}
+
+.item-6 {
+  order: 2;
+}
+.item-12 {
+  order: 4;
+}
+.item-13 {
+  order: 3;
+}
+.item-7 {
+  order: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+  width: 85%;
   margin: 0 auto;
+}
+.section {
+  margin-bottom: 60px;
 }
 img {
   max-width: 100%;
 }
-.card {
+.hero-section {
+  width: 100%;
+}
+.hero-section h1 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 24px 20px 26px;
+  text-align: center;
+}
+.full-width-img {
+  width: 100%;
+}
+.col {
   display: inline-block;
-  width: 250px;
+  width: 45.6%;
 }
-.card-img {
-  height: 250px;
+.col:last-child {
+  margin-left: 8.3%;
 }
-.card-img img {
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-.card-desc {
-  /*  !!! з кнопками так робити не треба !!!  width: 120px; */
-  /*  !!! з кнопками так робити не треба !!!  height: 30px; */
-  padding: 10px 26px;
-  background-color: green;
-}
-
-.container {
-  width: 1200px;
-  height: 450px;
-}
+.col img {
+  width: 100%;
+} */
