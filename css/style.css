@@ -3,3 +3,136 @@
   margin: 0;
   box-sizing: border-box;
 }
+.container {
+  max-width: 90%;
+  margin: 30px auto;
+  background-color: lightslategray;
+  height: 90vh;
+  padding: 10px;
+}
+.loading {
+  background: lightblue;
+  border-radius: 2px;
+  color: #000;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 30px;
+  /* animation-duration: 1s;
+  animation-name: bouncing;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: infinite; */
+
+  animation: bouncing 1s ease 1s infinite alternate both;
+}
+.box {
+  width: 140px;
+  height: 140px;
+  background-color: yellow;
+  margin: 30px;
+  /* animation: scale 1s steps(3, jump-start) 0s infinite; */
+}
+
+.preloader::after {
+  position: absolute;
+  top: 0;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 40px;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-top-color: #327a61;
+  border-bottom-color: #a0efd2;
+  border-right-color: #a0efd2;
+  border-left-color: #a0efd2;
+  animation: rotate 1.5s linear infinite;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.custom-checkbox-icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.custom-checkbox-icon::before {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  /* background-color: blueviolet; */
+  border-color: transparent;
+  border-bottom-color: blue;
+  border-right-color: blue;
+  border-width: 4px;
+  border-style: solid;
+  transform: translate(-50%, -70%) rotate(30deg);
+  display: none;
+}
+.custom-checkbox input:checked ~.custom-checkbox-icon::before {
+  display: block;
+}
+.custom-checkbox input {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  } 
+  100% {
+    bottom: 30px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  } 
+}
+

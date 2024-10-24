@@ -7,6 +7,46 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="preloader"></div>
+    <a class="loading" href="#">Loading ...</a>
+    <div class="box">
+      <img src="./img/Calling.svg" alt="">
+      <img src="./img/Location.svg" alt="">
+      <img src="./img/Message.svg">
+      <svg width="20px" height="20px">
+        <use href="./img/sprite.svg#icon-tel"></use>
+      </svg>
+      <svg width="20px" height="20px">
+        <use href="./img/sprite.svg#icon-email"></use>
+      </svg>
+    </div>
+    <form action="#">
+      <input type="range" class="range">
+    </form>
+
+    <div>
+      <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="80" height="80" fill="green">
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="4s"
+            repeatCount="indefinite"
+          />
+        </rect>
+       </svg>
+    </div>
+
+    <form action="#">
+      <label for="check" class="custom-checkbox">
+        <input type="checkbox" name="check" id="check">
+        <div class="custom-checkbox-icon"></div>
+      </label>
+    </form>
+
+  </div>
 </body>
 </html>
