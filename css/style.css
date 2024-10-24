@@ -3,3 +3,108 @@
   margin: 0;
   box-sizing: border-box;
 }
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+header {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+}
+.preloader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: 0.6s ease-in;
+}
+.preloader.hidden {
+  display: none;
+}
+.preloader.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+}
+.preloader svg {
+  width: 70px;
+}
+
+.modal-window {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-content {
+  background-color: #fff;
+  min-width: 400px;
+  padding: 50px 30px 30px;
+  position: relative;
+}
+.modal-content form div {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.modal-content form input {
+  width: 100%;
+  padding: 12px 18px;
+}
+.modal-content form input[type="checkbox"] {
+  width: 20px;
+  margin-right: 10px;
+}
+.modal-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+} 
+.modal-close::after, .modal-close::before {
+  content: '';
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.modal-close::after {
+  transform: rotate(45deg) translateX(-50%);
+}
+.modal-close::before {
+  transform: rotate(-45deg);
+}
+p {
+  background-color: lightgray;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  overflow-y: hidden;
+}
